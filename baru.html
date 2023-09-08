@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar javascript</title>
+</head>
+<body>
+
+        <h1 id="ganti1">belajar javascript</h1>
+        <button onclick="hallo()">java script</button>
+    <div>
+        <h1 id="ganti2">nama saya</h1>
+        <button onclick="namasaya()"> nama  </button>
+    </div>
+    <h1 id="hasil">hasil</h1>
+    <input type="number" id="bil1">
+    <input type="number" id="bil2">
+    <button onclick="jumlah()"> hasil </button>
+</body>
+<script>
+
+    function namasaya(){
+        document.getElementById('ganti2').innerHTML="fernanda dwi prasetya";
+    }
+    function jumlah(){
+        let a=document.getElementById('bil1').value;
+        let b=document.getElementById('bil2').value;
+        let hasil=parseInt(a)+parseInt(b);
+        document.getElementById('hasil').innerHTML=hasil;
+    }
+
+</script>
+</html>
