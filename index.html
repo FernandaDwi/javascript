@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"async defer></script>
     <title>belajar javascript</title>
 </head>
 <body>
     <div>
-        <h1 id="waktu1">waktu</h1>
-        <button onclick="hallo()">
-            klik
+        <input type="text" placeholder="ketik nama kamu" id="ketik">
+
+
+        <h1 id="waktu">waktu</h1>
+        <button id="jam">
+        pencet ini
         </button>
-        <button onclick="waktu()">
-             waktu
+        <button id="hari">
+            waktu
         </button>
         <br>
         <br>
@@ -21,48 +25,16 @@
         <h1 id="zodiak">zodiak</h1>
 
         <h1 id="hasil">hasil perkalian</h1>
-        <button oneclick="zodiak()">zodiak</button>
+        <button id="keluar">zodiak</button>
+         <input type="">
         <br>
         <br>
+        
+
         <input type="number" id="bil1" placeholder="bilangan 1">
         <input type="number" id="bil2" placeholder="bilangan 2">
         <button oneclick="kali()">perkalian</button>
     </div> 
-    <script>
-        function hallo(){
-            alert("hallo javascript");
-        }
-        function waktu(){
-           document.getElemenByid('waktu1').innerHTML="9:37 waktu indonesia";
-        }
-        function zodiak(){
-            let tanggal=document.getElementById('tanggal').value;
-            let bulan=document.getElementById('bulan').value;
-            let zodiak= ""
-
-            if(bulan == 1){
-                if(tanggal > 0 && tanggal < 20) {
-                    zodiak = "aquarius";
-                }
-                if(tanggal > 19 && tanggal < 32){
-                    zodiak ="aries";
-                }
-
-            }
-            if(bulan == 2){
-               if(tanggal > 0 && tanggal < 20){
-                    zodiak ="gemini";
-               }
-            }
-            document.getElementry('zodiak').innerHTML="zodiak";
-
-         }
-         function kali(){
-            let a=document.getElementById('bil1').value;
-            let b=document.getElementById('bil2').value;
-            let hasil=a*b;
-            document.getElementById('hasil').innerHTML="hasil";
-         }
-    </script>
+   
 </body>
 </html>
